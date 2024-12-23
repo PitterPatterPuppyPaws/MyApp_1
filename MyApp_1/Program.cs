@@ -11,7 +11,8 @@ var app = builder.Build();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=home}/{action=index}/{id?}"
-);
+).WithStaticAssets();
 
+app.MapStaticAssets();
 
 app.Run();

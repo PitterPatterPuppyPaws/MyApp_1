@@ -1,0 +1,24 @@
+.base-navbar {
+    background-color: dodgerblue;
+    background-color: dimgray;
+}
+
+.yellow-outline {
+    outline-style: solid;
+    outline-color: yellow;
+    outline-width: 1px;
+    /* outline-offset: -1px; */
+}
+
+.yellow-border {
+    border-style: solid;
+    border-color: yellow;
+    border-width: 1px;
+}
+
+
+
+.base-footer {
+    background-color: dimgray;
+    height: 50px;
+}
