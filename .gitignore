@@ -2,6 +2,9 @@
 bin/
 **/obj/
 obj/
+
+MyApp_1/MyApp_1.db
+
 MyApp_1/bin/Debug/net9.0/appsettings.Development.json
 MyApp_1/bin/Debug/net9.0/appsettings.json
 MyApp_1/bin/Debug/net9.0/MyApp_1.deps.json
