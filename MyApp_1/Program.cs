@@ -13,14 +13,22 @@ if(builder.Environment.IsDevelopment()) {
 }
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpLogging(logging => {}); // Add http logging middleware with default settings
 
 var app = builder.Build();
 
+// Enable http logging for everything called after this line (ex: UseStaticFiles())
+// Everything called before UseHttpLogging() will not have http logging
+app.UseHttpLogging();
+
 //app.MapGet("/", () => "Hello World!");
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=home}/{action=index}/{id?}"
 ).WithStaticAssets();
+// app.MapControllers();
+
 
 app.MapStaticAssets();
 

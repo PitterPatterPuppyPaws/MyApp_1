@@ -1,0 +1,12 @@
+/// Entry 1 ///
+Added ProgressNotes.txt to better keep track of edits.
+Adding http logging:
+    Added "...HttpLoggingMiddleware": "Information" to appsettings.Development.json to show http logging.
+
+Attribute routing issues:
+    Learned how routes applied to the controller and routes applied to the controllers methods work together.
+    Now the attribute routing is implemented correctly for the HomeController
+
+Added a test controller and view
+
+Added images/favicon.jpg and corrisponding tag in _Layout.cshtml to include it.

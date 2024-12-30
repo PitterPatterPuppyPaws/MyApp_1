@@ -14,5 +14,5 @@ public class MyApp_1DbContext: DbContext
         : base(options)
     {}
 
-    public DbSet<MyApp_1.Models.FirstModel> FirstModel { get; set; }
+    public DbSet<MyApp_1.Models.FirstModel> FirstModel { get; set; } = default!;
 }
