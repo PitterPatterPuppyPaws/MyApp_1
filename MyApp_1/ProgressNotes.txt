@@ -10,3 +10,12 @@ Attribute routing issues:
 Added a test controller and view
 
 Added images/favicon.jpg and corrisponding tag in _Layout.cshtml to include it.
+
+/// Entry 2 ///
+LOOK INTO "CSS ISOLATION" !!!!!
+
+Removed @page tag from .cshtml files because its not supposed to be there in an MVC and was causing issues.
+
+Added Users controller and some views.
+Going to inject MyApp_1DbContext and mess with it a bit:
+    Got the UsersController to finally extract some data from the database.

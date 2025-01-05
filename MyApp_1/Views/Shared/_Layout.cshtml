@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYLAYOUT_TITLE</title>
+    <title>@ViewData["Title"]</title>
     <link rel="icon" type="images/x-icon" href="~/images/favicon.jpg">
 
     <link rel="stylesheet" href="~/css/_Layout.css">
@@ -19,7 +19,7 @@
         <div class="container-fluid">            
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="navbar-brand" href="#">MyApp</a>
+                    <a class="navbar-brand" href="~/Home/Index">MyApp</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">Thing 1</a>
@@ -30,6 +30,16 @@
                 <li class="nav-item">
                     <a class="nav-link">Thing 3</a>
                 </li>
+
+                @{
+                    String[] navItems = ViewData["navItems"] as String[] ?? new String[0];
+                }
+                @for(int navIdx = 0; navIdx < navItems.Length; navIdx++) {
+                    <li class="nav-item">
+                        @* <a class="nav-link">@(((String[])ViewData["navItems"])[navIdx])</a> *@
+                        <a class="nav-link">@navItems[navIdx]</a>
+                    </li>
+                }
             </ul>
         </div>
     </nav>

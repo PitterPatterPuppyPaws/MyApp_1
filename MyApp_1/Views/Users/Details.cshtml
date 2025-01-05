@@ -1,0 +1,16 @@
+@* Controller = UsersController  ;  Action = Details *@
+
+@model MyApp_1.Models.FirstModel
+
+
+<h1>Users - Details</h1>
+<div class="container" style="background-color: aqua;">
+    <dl style="background-color: darkslateblue;">
+        <dt>
+            @Html.DisplayNameFor(m => m.Username)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+    </dl>
+</div>

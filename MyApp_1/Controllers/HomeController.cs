@@ -6,9 +6,6 @@ namespace MyApp_1.Controllers;
 // [Route("~/Home/Index")] // ~ means ignore prior prefixes
 // [Route("Home/Index/{id:int:min(1)}")] // route constraint. In this case , constrains id to be an integer that is >= 1
 // [Route("api/cars/{id?}, Name="GetCarById")] // Named route. Also ? means optional.
-// 
-
-
 
 [Route("")]
 [Route("Home")]
@@ -16,6 +13,11 @@ namespace MyApp_1.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+
+    [ViewData]
+    public string Title { get; set; } = "MyApp Home";
+    [ViewData]
+    public string[] navItems { get; set; } = new string[] {};
 
     public HomeController(ILogger<HomeController> logger)
     {
@@ -26,6 +28,8 @@ public class HomeController : Controller
     [HttpGet("Index")]
     public IActionResult Index()
     {
+        //ViewData["Title"] = "MyApp Home";
+        navItems = new string[] {"Apple", "Puppy", "Paw"};
         return View();
     }
 

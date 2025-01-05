@@ -1,15 +1,9 @@
 **/bin/
-bin/
+MyApp_1/bin/
 **/obj/
-obj/
+MyApp_1/obj/
 
 MyApp_1/MyApp_1.db
+MyApp_1/MyApp_1.db-shm
+MyApp_1/MyApp_1.db-wal
 
-MyApp_1/bin/Debug/net9.0/appsettings.Development.json
-MyApp_1/bin/Debug/net9.0/appsettings.json
-MyApp_1/bin/Debug/net9.0/MyApp_1.deps.json
-MyApp_1/bin/Debug/net9.0/MyApp_1.dll
-MyApp_1/bin/Debug/net9.0/MyApp_1.exe
-MyApp_1/bin/Debug/net9.0/MyApp_1.pdb
-MyApp_1/bin/Debug/net9.0/MyApp_1.runtimeconfig.json
-MyApp_1/bin/Debug/net9.0/MyApp_1.staticwebassets.endpoints.json
